@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+
+        <div class="flex flex-row flex-wrap items-center h-18 justify-around bg-white border">
+
+
+            <div class="flex flex-row gap-8  font-bold  ">
+                <a href="../src/index.html" class="cursor-pointer ">Dashboard</a>
+                <a href="./create.html" class="cursor-pointer " aria-current="page">Create</a>
+
+            </div>
+
+            <div class=" flex flex-wrap  gap-6">
+                <i class="cursor-pointer fa-solid fa-dumpster-fire"></i>
+                <i class="cursor-pointer fa-regular fa-user"></i>
+                <i class="cursor-pointer fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="flex flex-row gap-4">
+                <div
+                    class="py-4 px-8 underline hover:no-underline hover:text-white rounded-lg  hover:bg-gradient-to-r from-blue-900  to-blue-400">
+                    Login</div>
+                <div
+                    class="py-4 px-8 underline hover:no-underline hover:text-white rounded-lg  hover:bg-gradient-to-r from-blue-900 to-blue-400">
+                    Sign Up</div>
+
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+    <div class="text-4xl text-center mt-10 text-blue-950 font-bold">Create</div>
+
+    <form name="myForm" id="myForm" class=" ">
+        <div class="flex flex-wrap justify-center gap-10 mt-10">
+
+
+            <div>
+                <label for="firstName" class="block ">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter your FirstName"
+                    class="border border-slate-500 w-96 h-10 p-1">
+
+            </div>
+
+
+            <div>
+                <label for="firstName" class="block mb-1">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter your LastName"
+                    class="border border-slate-500 w-96 h-10 p-1">
+            </div>
+
+
+
+            <div>
+                <label for="dob" class="block mb-1">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" placeholder="Date of birth"
+                    class="border border-slate-500 w-96 h-10 p-1">
+            </div>
+
+            <div>
+                <label for="doj" class="block mb-1">Date of Joining:</label>
+                <input type="date" name="doj" id="doj" placeholder="Date of joining"
+                    class="border border-slate-500 w-96 h-10 p-1">
+            </div>
+
+
+
+            <div>
+                <label for="email" class="block mb-1">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Date of email"
+                    class="border border-slate-500 w-96 h-10 p-1">
+            </div>
+
+
+
+            <div>
+                <label for="mobile" class="block mb-1">Mobile:</label>
+                <input type="mobile" name="mobile" id="mobile" placeholder="Date of mobile"
+                    class="border border-slate-500 w-96 h-10 p-1">
+            </div>
+
+
+
+        </div>
+
+        <div class="flex flex-row-reverse">
+            <button class=" text-2xl bg-gray-600 text-white p-2 rounded mt-24 mr-36" type="submit">
+                Submit
+            </button>
+        </div>
+    </form>
+
+
+
+
+<script src="../JS/create.js"></script>
+
+
+
+</body>
+
+</html>

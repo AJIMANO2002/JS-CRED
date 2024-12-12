@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense Calculator Task
+    </title>
+    <link rel="stylesheet" href="./output.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Navbar -->
+        <nav>
+
+            <div class="flex flex-row flex-wrap items-center h-18 justify-around bg-white border">
+
+
+                <div class="flex flex-row gap-8  font-bold  ">
+                    <a href="./index.html" class="cursor-pointer" aria-current="page">Dashboard</a>
+                    <a href="../HTML/create.html" class="cursor-pointer">Create</a>
+
+                </div>
+
+                <div class=" flex flex-wrap  gap-6">
+                    <i class="cursor-pointer fa-solid fa-dumpster-fire"></i>
+                    <i class="cursor-pointer fa-regular fa-user"></i>
+                    <i class="cursor-pointer fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="flex flex-row gap-4">
+                    <div
+                        class="py-4 px-8 underline hover:no-underline hover:text-white rounded-lg  hover:bg-gradient-to-r from-blue-900 to-blue-400">
+                        Login</div>
+                    <div
+                        class="py-4 px-8 underline hover:no-underline hover:text-white rounded-lg  hover:bg-gradient-to-r from-blue-900 to-blue-400">
+                        Sign Up</div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <section class="m-4">
+            <div class="text-3xl font-bold">Dashboard</div>
+            <table class="table-auto border border-collapse border-slate-400 border-spacing-2 w-auto">
+                <thead>
+                    <tr>
+                        <th class="border text-center bg-slate-800 w-52 text-white border-slate-400">Id</th>
+                        <th class="border text-center bg-slate-800 w-52 text-white border-slate-400">FirstName</th>
+                        <th class="border text-center bg-slate-800 w-52 text-white border-slate-400">Last Name</th>
+                        <th class="border text-center bg-slate-800 w-52 text-white border-slate-400">Date Birth</th>
+                        <th class="border text-center bg-slate-800 w-52 text-white border-slate-400">Date Joining</th>
+                        <th class="border text-center bg-slate-800 w-96 text-white border-slate-400">Email</th>
+                        <th class="border text-center bg-slate-800 w-80 text-white border-slate-400">Mobile</th>
+                        <th class="border text-center bg-slate-800 w-80 text-white border-slate-400">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+
+        </section>
+
+    </div>
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>
