@@ -2,7 +2,7 @@ const BASE_URL = "https://675528d636bcd1eec852b298.mockapi.io/Employee";
 
 
 const edit = (id) => {
-  window.location.replace(`../HTML/edit.html?id=${id}`)
+  window.location.replace(`./HTML/edit.html?id=${id}`)
 
 }
 
@@ -44,9 +44,9 @@ const constructTable = (data) => {
     <td class="border border-slate-400 text-center">${e.email}</td>
     <td class="border border-slate-400 text-center">${e.mobile}</td>
     <td class="border border-slate-400 text-center">
-    <button onclick="edit(${e.id})">Edit</button>
+    <button class="bg-orange-500 hover:bg-orange-800 text-white px-4 py-2 rounded" onclick="edit(${e.id})">Edit</button>
     &nbsp;&nbsp;
-    <button class="" onclick="deletebutton(${e.id})">Delete</button>
+    <button class="bg-red-500 hover:bg-red-800 text-white p-2 rounded" onclick="deletebutton(${e.id})">Delete</button>
     </td>`
 
         tBody.appendChild(tr)

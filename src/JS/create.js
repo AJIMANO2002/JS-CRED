@@ -24,7 +24,7 @@ myForm.addEventListener("submit", async (e) => {
             })
             if (res.status === 201) {
                 alert("created Successfully")
-                window.location.replace("../src/./index.html") 
+                window.location.replace("../index.html") 
             } else {
                 throw `${res.status} :${data.message ?? "Error Occured"}`
             }

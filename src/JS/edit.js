@@ -69,7 +69,7 @@ myForm.addEventListener("submit", async (e) => {
             })
             if (res.status === 200) {
                 alert("Updated Successfully")
-                window.location.replace("../src/./index.html")
+                window.location.replace("../index.html")
             } else {
                 throw `${res.status} :${data.message ?? "Error Occured"}`
             }
